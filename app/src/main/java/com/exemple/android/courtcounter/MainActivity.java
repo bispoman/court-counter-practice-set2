@@ -54,4 +54,10 @@ public class MainActivity extends AppCompatActivity {
         TextView Scoreview = (TextView) findViewById(R.id.pointcountforb);
         Scoreview.setText(String.valueOf(pointsForB));
     }
+    public void resetAll(View v) {
+        pointsForA = 0;
+        pointsForB = 0;
+        displayforTeamB();
+        displayforTeamA();
+    }
 }
